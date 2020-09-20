@@ -12,3 +12,6 @@ After allowing developer mode directly from Chrome extension program, click "Loa
 
 추가 후 개발자 모드를 종료해도 됩니다. <br>
 You can exit developer mode after adding.
+
+
+~~5달러를 내기 귀찮아서.. 읍읍~~
