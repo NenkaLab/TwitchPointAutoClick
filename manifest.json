@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "트위치 포인트 자동수집",
+    "version": "1",
+    "author": "Nenka",
+    "incognito": "split",
+    "description": "자바스크립트을 이용하여 트위치 포인트 버튼를 자동클릭 합니다.",
+    "icons": {
+        "16": "twitch.png",
+        "48": "twitch.png",
+        "128": "twitch.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "http://twitch.tv/*",
+        "https://twitch.tv/*",
+        "http://*.twitch.tv/*",
+        "https://*.twitch.tv/*",
+        "http://twitch.com/*",
+        "https://twitch.com/*",
+        "http://*.twitch.com/*",
+        "https://*.twitch.com/*"
+    ],
+    "content_scripts": [
+        {
+          "matches": [
+            "http://twitch.tv/*",
+            "https://twitch.tv/*",
+            "http://*.twitch.tv/*",
+            "https://*.twitch.tv/*",
+            "http://twitch.com/*",
+            "https://twitch.com/*",
+            "http://*.twitch.com/*",
+            "https://*.twitch.com/*"
+          ],
+          "all_frames": true,
+          "js": ["content.js"]
+        }
+    ]
+}
